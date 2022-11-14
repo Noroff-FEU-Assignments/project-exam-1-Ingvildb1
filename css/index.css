@@ -25,6 +25,8 @@ img {
 }
 body {
     background: #DBD2CA;
+    margin: 0;
+    padding: 0;
 }
 
 /* Logo */
@@ -32,7 +34,7 @@ body {
     font-size: 1rem;
     color:black;
     text-transform: uppercase;
-    margin: 10px;
+    margin: 10px 0;
     display: flex;
     justify-content: right;
 }
@@ -55,6 +57,7 @@ body {
     height: 1000px;
     position: fixed;
     opacity: 50%;
+    top: 0;
 
 }
 
@@ -86,10 +89,11 @@ li a:hover{
     position:inherit;
     background-position:center 50%;
     width: 100%;
+    top: 0;
 }
 
 .header-text {
-    position: fixed;
+    position: relative;
     top: 300px;
     text-align: center;
     background: #7E7B7A;

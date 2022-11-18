@@ -4,12 +4,15 @@ const postContainer = document.querySelector(".posts");
 async function getPosts(url){
     const response = await fetch(url);
     const posts = await response.json();
+
+    const image =
     posts.forEach(function(post){
         postContainer.innerHTML += ` <a href="postdetails.html?id=${post.id}" class="card">
-        <div class="post"><h3>${post.title.rendered}</h3>
-        <img src="${post.jetpack_featured_media_url.src}" alt="" class="post-img">     
-        </a>
+        <div class="post">
+        <img src="${post.jetpack_featured_media_url}" alt="" class="post-img">
+        <h3>${post.title.rendered}</h3>     
         </div> 
+        </a>
         `
     })
 }

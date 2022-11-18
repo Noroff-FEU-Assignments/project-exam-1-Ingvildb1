@@ -35,7 +35,7 @@ body {
     text-transform: uppercase;
     margin: 10px 0;
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 /* Nav */
@@ -101,7 +101,7 @@ h1 {
 }
 
 img {
-    width: 600px;
-    height: 600px;
+    width:900px;
+    height: 424px;
     
 }

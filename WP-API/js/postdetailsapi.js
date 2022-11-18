@@ -17,7 +17,7 @@ async function getDetails(url){
 
     postContainer.innerHTML = `<h1>${details.title.rendered}</h1>
                                 <div class="post-card>
-                               <img src="${details.jetpack_featured_media_url}" alt="" class="post-img">
+                               
                                <div class="post-text">${details.content.rendered}</div>
                                 </div>
     `;

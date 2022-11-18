@@ -1,6 +1,5 @@
 
 
-
 /* Some variables */
 :root {
     --main-color:
@@ -27,6 +26,7 @@ body {
     background: #DBD2CA;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Logo */
@@ -75,49 +75,32 @@ li a:hover{
 
 }
 
-
-.header-box {
-    background-image: url("../images/header-4.jpg");
-    background-size: cover;
-    min-height: 100vh;
-    position:inherit;
-    background-position:center 50%;
-    width: 100%;
-    top: 0;
-}
-
-.header-text {
-    position: relative;
-    top: 300px;
-    text-align: center;
-    background: #7E7B7A;
-    opacity: 50%;
-    justify-content: center;
-    width: 700px;
-    left: 30%;;
-}
-
-h1 {
-   color: #ECE5E1;
-   text-transform: uppercase;
-   font-size: 3em;
-}
+/* Blogposts */
 
 h2 {
-    color:#ECE5E1 ;
-    text-transform: uppercase;
-    font-size: 1em;
-}
-
-
-/* Latest section */
-
-h3 {
     display: flex;
     justify-content: center;
     margin: 90px;
     color: #7E7B7A;
 }
 
+.posts {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 5px;
 
+
+}
+
+h3{
+    color: #000000;
+    text-align: left;
+    padding: 10px 10px;
+    font-size: 15px;
+}
+
+.post-img {
+    width: 200px;
+}
 

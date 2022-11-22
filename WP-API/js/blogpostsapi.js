@@ -5,7 +5,7 @@ async function getPosts(url){
     const response = await fetch(url);
     const posts = await response.json();
 
-    const image =
+    
     posts.forEach(function(post){
         postContainer.innerHTML += ` <a href="postdetails.html?id=${post.id}" class="card">
         <div class="post">

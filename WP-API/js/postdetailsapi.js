@@ -19,6 +19,7 @@ async function getDetails(url){
                                 <div class="post-card>
                                
                                <div class="post-text">${details.content.rendered}</div>
+
                                 </div>
     `;
 

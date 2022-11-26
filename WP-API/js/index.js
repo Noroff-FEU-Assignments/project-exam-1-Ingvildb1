@@ -26,7 +26,7 @@ getPosts(baseUrl);
 
 
 
-const baseUrl3 = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/29" ;
+const baseUrl3 = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/31" ;
 
 async function getDetails(url){
     const response = await fetch(url);

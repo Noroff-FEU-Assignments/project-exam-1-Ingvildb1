@@ -15,7 +15,7 @@ async function getDetails(url){
     const details = await response.json();
 
 
-    postContainer.innerHTML = `<h1>${details.title.rendered}</h1>
+    postContainer.innerHTML = `<h2>${details.title.rendered}</h2>
                                 <div class="post-card>
                                
                                <div class="post-text">${details.content.rendered}</div>

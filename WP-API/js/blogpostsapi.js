@@ -18,3 +18,14 @@ async function getPosts(url){
 }
 
 getPosts(baseUrl);
+
+
+/* Back button */
+
+function backButton(){
+    onclick
+    window.history.back()
+}
+
+back();
+

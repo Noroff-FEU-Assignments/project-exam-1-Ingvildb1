@@ -27,3 +27,13 @@ async function getDetails(url){
 }
 
 getDetails(baseUrl);
+
+
+/* Back button */
+
+function backButton(){
+    onclick
+    window.history.back()
+}
+
+back();

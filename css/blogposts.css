@@ -115,3 +115,22 @@ h3{
     margin: 30px;
 }
 
+
+
+/* RESPONSIVE */ 
+
+
+@media (max-width: 915px) {
+    .nav {
+        top: 30%;
+    }
+
+    .posts {
+        margin: 0px 70px 0 260px;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 100px 0 100px 160px;
+    }
+}

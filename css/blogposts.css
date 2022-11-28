@@ -75,12 +75,24 @@ li a:hover{
 
 }
 
+.back-button {
+    display: flex;
+    margin: 40px 0 0 200px;
+    background: none;
+    padding: 10px 30px;
+    border: none;
+}
+
+.back-button:hover{
+    color: #7E7B7A;
+}
+
 /* Blogposts */
 
 h2 {
     display: flex;
     justify-content: center;
-    margin: 90px;
+    margin: 10px 90px 70px;
     color: #242424;
     font-size: 3em;
 }
@@ -92,7 +104,7 @@ h2 {
     padding: 10px 10px;
     justify-content: center;
     background:rgba(231, 227, 221, 0.664);
-    margin: 0px 250px;
+    margin: 0px 300px;
 
 
 }
@@ -114,6 +126,8 @@ h3{
     justify-content: center;
     margin: 30px;
 }
+
+
 
 
 

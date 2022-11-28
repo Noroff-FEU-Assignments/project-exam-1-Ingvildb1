@@ -1,9 +1,9 @@
-const baseUrl = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts";
-const postContainer = document.querySelector(".posts");
+const baseUrl = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts?per_page=20";
+const postContainer = document.querySelector(".card");
 const postSlider = document.querySelector(".post-img")
 
 const baseUrl2 = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/45";
-const postContainer1 = document.querySelector(".post-container-1");
+
 
 async function getPosts(url){
     const response = await fetch(url);
@@ -14,18 +14,43 @@ async function getPosts(url){
         postContainer.innerHTML += ` <a href="postdetails.html?id=${post.id}" class="card">
         <div class="post">
         <img src="${post.jetpack_featured_media_url}" alt="" class="post-img">
-        <h3 class=">${post.title.rendered}</h3>     
+        <h3 class="card-text">${post.title.rendered}</h3>    
         </div> 
         </a>
         `
     })
 }
 
-getPosts(baseUrl);
+getPosts(baseUrl); 
+
+/* SLIDER*/ 
 
 
+/* 2 */
+
+/*const card2 = document.querySelector(".card");
+const cardUrl2 = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/43" ;
+
+async function getCard(url){
+    const response = await fetch(url);
+    const details = await response.json();
 
 
+    card1.innerHTML = ` <a href="postdetails.html?id=${details.id}" class="card-2">
+    <div class="post-2">
+    <img src="${details.jetpack_featured_media_url}" alt="" class="post-img">
+    <h3 class=">${details.title.rendered}</h3>     
+    </div> 
+    </a>
+    `;
+
+
+}
+
+getCard(cardUrl2);*/
+
+
+const postContainer1 = document.querySelector(".post-container-1");
 const baseUrl3 = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/31" ;
 
 async function getDetails(url){
@@ -51,7 +76,7 @@ getDetails(baseUrl3);
 
 var swiper = new Swiper(".slide-latest", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 20,
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
@@ -65,4 +90,6 @@ var swiper = new Swiper(".slide-latest", {
     },
   });
 
+
+ 
 

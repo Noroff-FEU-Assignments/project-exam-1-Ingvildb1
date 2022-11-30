@@ -1,5 +1,5 @@
-const baseUrl = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts?per_page=20";
-const postContainer = document.querySelector(".card");
+const baseUrl = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/";
+const postContainer = document.querySelector(".swiper-slide");
 const postSlider = document.querySelector(".post-img")
 
 const baseUrl2 = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/45";
@@ -100,9 +100,9 @@ getBoxes(boxUrl);
 
 
 var swiper = new Swiper(".slide-latest", {
-    slidesPerView: 3,
+    slidesPerView: 8,
     spaceBetween: 20,
-    slidesPerGroup: 3,
+    slidesPerGroup: 8,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {

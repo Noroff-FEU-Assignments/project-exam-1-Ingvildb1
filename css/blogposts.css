@@ -48,7 +48,7 @@ body {
     padding: 0;
     background: #ECE5E1;
     width: 200px;
-    height: 1000px;
+    min-height: 1000px;
     position: fixed;
     opacity: 50%;
     top: 0;
@@ -105,9 +105,23 @@ h2 {
     justify-content: center;
     background:rgba(231, 227, 221, 0.664);
     margin: 0px 300px;
-
-
+    display: none;
+    
 }
+
+.posts:nth-child(1),
+.posts:nth-child(2),
+.posts:nth-child(3),
+.posts:nth-child(4),
+.posts:nth-child(5),
+.posts:nth-child(6),
+.posts:nth-child(7),
+.posts:nth-child(8),
+.posts:nth-child(9),
+.posts:nth-child(10) {
+    display: grid;
+}
+
 
 h3{
     color: #000000;
@@ -116,18 +130,36 @@ h3{
     font-size: 15px;
 }
 
-/*.post-img {
-    height: 350px;
-}*/
+
 
 .card {
     display: grid;
     grid-template-rows: repeat(1fr) ;
     justify-content: center;
     margin: 30px;
+   
 }
 
 
+
+#load-more {
+    background-color: #ECE5E1;
+    border: 0;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 20px 70px;
+    font-size: 0.8em;
+    left: 550px;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+#load-more:hover{
+    background-color: #717171;
+}
 
 
 

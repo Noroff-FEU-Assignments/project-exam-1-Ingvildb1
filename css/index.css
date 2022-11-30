@@ -136,7 +136,7 @@ h3 {
 .latest-container {
     width: 100%;
     max-width: 900px;
-    left: 30px;
+    left: 40px;
 
 
 }
@@ -148,21 +148,14 @@ h3 {
 }
 
 
-
-/*.posts {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    
-}*/
-
 .slide-latest {
-    margin: 0 0px;
-    padding: 50px 50px;
+    margin: 0 10px;
+    padding: 10px 0px;
+    width: 1000px;
 }
 
 .card {
-    margin: 10px;
+    margin: 20px;
     display: flex;
     position: relative;
     flex-direction: row;
@@ -175,6 +168,7 @@ h3 {
 .swiper-slide {
     padding: 0px;
     margin: 0px;
+    
 }
 
 .card-text {
@@ -184,6 +178,7 @@ h3 {
     font-weight:400;
 
 }
+
 
 
  

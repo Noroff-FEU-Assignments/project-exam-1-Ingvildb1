@@ -303,4 +303,44 @@ button {
     .nav-box {
         background: none;
     }
+
+}
+
+@media (max-width: 412px){
+    h2 {
+        font-size: 1.8em;
+        margin:60px 0 40px 40px;
+    }
+
+    input {
+        width: 250px;
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 11px;
+    }
+    .contact {
+        width: 400px;
+     
+    }
+
+    textarea {
+        width: 250px;
+        padding: 10px;
+    }
+
+    #send-btn {
+        width: 200px;
+        margin-left: 40px;
+    }
+
+    .nav-box {
+        width: 90px;
+        min-height: 15px;
+        height: 15px;
+    }
+
+    .logo {
+        font-size: 0.7em;
+    }
+    
 }

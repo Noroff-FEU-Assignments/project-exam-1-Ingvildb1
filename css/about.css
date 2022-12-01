@@ -24,6 +24,7 @@ body {
     background: #DBD2CA;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
 }
 
@@ -194,10 +195,15 @@ h2 {
 
 }
 
+.text-container p {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
 .text-container-2 {
     background:rgba(255, 255, 255, 0.459);
     position: relative;
-    top: 120px;
+    top: 190px;
     text-align: left;
     justify-content: center;
     width: 940px;
@@ -210,7 +216,7 @@ h2 {
 
 
 
-@media (max-width: 915px) {
+@media (max-width: 1087px) {
     .nav {
         top: 30%;
     }
@@ -247,9 +253,13 @@ h2 {
         left: 30%;
     }
 
+    .text-container p {
+        line-height: 22px;
+    }
+
     .text-container-2 {
-        top: 190px;
-        width: 600px;
+        top: 240px;
+        width: 650px;
 
     }
 }
@@ -269,5 +279,102 @@ h2 {
     }
     .nav-box {
         background: none;
+    }
+
+    .header-box {
+        min-height: 50vh;
+    }
+
+    .header-text {
+        width: 300px;
+        height: 150px;
+        top: 120px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 0.7em;
+    }
+
+    .text-container p {
+        font-size: 0.9em;
+        width: 500px;
+        line-height: 19px;
+    }
+
+    .text-container {
+        left: 10%;
+
+    }
+
+    .text-container-2 {
+        margin-top: 120px;
+        max-width: 480px;
+      
+
+    }
+
+    .text-container-2 p {
+        font-size: 0.7em;
+      
+    }
+}
+
+
+@media (max-width: 460px){
+    .logo {
+        font-size: 0.7em;
+    }
+
+    .nav-box {
+        width: 90px;
+        min-height: 15px;
+    }
+    .header-box {
+        min-height: 45vh;
+    }
+
+    .nav-box {
+        opacity: 100%;
+    }
+
+    .header-text {
+        width: 240px;
+        height: 150px;
+        top: 120px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 0.7em;
+    }
+
+    .text-container p {
+        font-size: 0.7em;
+        width: 300px;
+        line-height: 19px;
+    }
+
+    .text-container {
+        left: 10%;
+
+    }
+
+    .text-container-2 {
+        margin-top: 120px;
+        max-width: 270px;
+      
+
+    }
+
+    .text-container-2 p {
+        font-size: 0.7em;
+      
     }
 }

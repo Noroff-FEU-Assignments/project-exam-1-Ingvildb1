@@ -240,3 +240,45 @@ img {
         background: none;
     }
 }
+
+
+@media (max-width: 412px) {
+    .back-button {
+        margin: 90px 0 0 30px;
+        background: none;
+        padding: 1px 30px;
+        border: none;
+    }
+
+    h2 {
+        font-size: 1.7em ;
+        margin: 0 60px 30px 70px;
+        justify-content: center;
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    p {
+        font-size: 0.7em ;
+        line-height: 19px;
+        margin: 0 13px 0 13px;
+    }
+
+    .posts {
+        grid-template-columns:min-content;
+        margin: 0px 80px;
+    }
+
+    .nav-box {
+        width: 90px;
+        min-height: 15px;
+        height: 15px;
+    }
+
+    .logo {
+        font-size: 0.7em;
+    }
+}

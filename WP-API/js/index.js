@@ -1,3 +1,4 @@
+
 const baseUrl = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/";
 const postContainer = document.querySelector(".swiper-slide");
 const postSlider = document.querySelector(".post-img")
@@ -51,7 +52,7 @@ getCard(cardUrl2);*/
 
 
 const postContainer1 = document.querySelector(".post-container-1");
-const baseUrl3 = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/31" ;
+const baseUrl3 = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/33" ;
 
 async function getDetails(url){
     const response = await fetch(url);
@@ -76,7 +77,7 @@ getDetails(baseUrl3);
 /* post boxes */
 
 const postBoxes = document.querySelector(".post-boxes");
-const boxUrl = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts?per_page=4";
+const boxUrl = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts?per_page=6";
 
 async function getBoxes(url){
   const response = await fetch(url);
@@ -86,7 +87,7 @@ async function getBoxes(url){
   postBox.forEach(function(post){
       postBoxes.innerHTML += ` <a href="postdetails.html?id=${post.id}" class="box-card">
       <div class="box-post">
-      <img src="${post.jetpack_featured_media_url}" alt="" class="post-img">
+      <img src="${post.jetpack_featured_media_url}" alt="" class="box-img">
       <h3 class="box-text">${post.title.rendered}</h3>    
       </div> 
       </a>
@@ -100,9 +101,9 @@ getBoxes(boxUrl);
 
 
 var swiper = new Swiper(".slide-latest", {
-    slidesPerView: 8,
+    slidesPerView: 3,
     spaceBetween: 20,
-    slidesPerGroup: 8,
+    slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -116,5 +117,17 @@ var swiper = new Swiper(".slide-latest", {
   });
 
 
+
+  /* hamburger menu */
+
+  const menu_btn = document.querySelector('.hamburger');
+  const mobile_menu = document.querySelector('.mobile-nav');
+
+  menu_btn.addEventListener('click', function() {
+    menu_btn.classList.toggle('is-active');
+    mobile_menu.classList.toggle('is-active');
+  }
+  
+  );
  
 

@@ -14,7 +14,8 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: black;
+    color: #ffff;
+    background:rgba(130, 130, 130, 0.664);
 
 }
 

@@ -27,34 +27,21 @@ perPage.onclick = function(){
 }
 
 
-/* load more btn */
-
-/*var boxes = document.querySelectorAll('.post');
-var loadMoreBtn = document.querySelector('#load-more');
-var currentItem = 10;
-
-loadMoreBtn.addEventListener('click', function(){
-    for(var i = currentItem;i<currentItem+10;i++){
-        if(boxes[i]){
-            boxes.style.display = 'grid';  
-        }
-    }
-})*/
 
 
-/*let loadMoreBtn = document.querySelector('#load-more');
-let currentItem = 10;
 
-loadMoreBtn.onclick = () =>{
-    let boxes = [...document.querySelectorAll('.posts .latest-box')];
-    for (var i = currentItem; i < currentItem + 10; i++){
-        if(boxes[i]){
-            boxes.style.display = 'grid';  
-        }
 
-    }
-    currentItem += 2;
-}*/
+/* hamburger menu */
+
+const menu_btn = document.querySelector('.hamburger');
+const mobile_menu = document.querySelector('.mobile-nav');
+
+menu_btn.addEventListener('click', function() {
+  menu_btn.classList.toggle('is-active');
+  mobile_menu.classList.toggle('is-active');
+}
+
+);
 
 
 /* Back button */

@@ -7,9 +7,6 @@
     <title>Pure Interior</title>
     <link rel="stylesheet" href="/css/contact.css">
 
-    <!-- Swiper CSS-->
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
-
     <!-- Hotjar Tracking Code for Project-exam-1 -->
 <script>
     (function(h,o,t,j,a,r){
@@ -40,16 +37,23 @@
                     <li> <a href="contact.html">Contact</a></li>
                 </ul>
         </div>
+        <button class="hamburger ">
+            <div class="bar">
+            </div>
+         </button>
     </div>
+    <nav class="mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="blogposts.html">Posts</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+   
+</nav>
 
         </section>
     </header>
 
     <main>
-        <div class="contact-header">
-           
-
-        </div>
 
     <div class="contact">
         <div>
@@ -58,39 +62,38 @@
      <div class="container-contact">
         
 
-        <form id="contactForm">
-            <div>
-                <label>
-                <input name="firstname" id="name" placeholder="Name" />
-                </label>
-                <div class="form-error" id="firstnameError">Your first name is required</div>
-            </div>
+       
 
-            <div>
-                <label>
-                <input name="email" id="email" placeholder="Email" />
-               </label>
-               <div class="form-error" id="emailError">Your email is required</div>
-            </div>
-            <div>
-                <label>
-                <input name="adress" id="adress" placeholder="Adress (minimum 25 characters)" />
-                </label>
-                <div class="form-error" id="adressError">Your adress must be at least 25 characters</div>
-            </div>
-            <div>
-                <label>
-                <input subject="subject" id="message" placeholder="Message (minimum 10 characters)" />
-                 </label>
-                 <div class="form-error" id="messageError">Your message must be at least 10 characters</div>
-            </div>
+            <div id="messageContainer"></div>       
+             <form method="POST" class="contactform">
+                <div class="inputBox">
+                    <input type="text" placeholder="Your Name" id="name" required>
+                    <div class="form-error" id="nameError">Your Name is required and needs to be more than 5 characters long</div>
+                 </div>
+                <div class="inputBox">
+                    <input type="email" placeholder="Email adress" id="email" required>
+                    <div class="form-error" id="emailError">Your Email is required and it needs to be a valid email adress</div>
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Message Title" id="title" required>
+                    <div class="form-error" id="titleError">A Title is required and minimum 15 characters</div>
+                </div>
+                <div class="inputBox">
+                    <textarea placeholder="Write message here" class="message" id="message" required></textarea>
+                    <div class="form-error" id="messageError">A Message is required and minimum 25 characters</div>
+                </div>
+        <input type="submit" value="Send message" name="message" id="send-btn">
+        <div id="messageSubmit"></div>
+            </form>
 
-            <button>Submit</button>
-         </form>
+          
+
+            
+         
          </div>
         </div>
 
     </main>
-    <script src="./java/contact.js"></script>
+    <script src="/js/contact.js"></script>
 </body>
 </html>

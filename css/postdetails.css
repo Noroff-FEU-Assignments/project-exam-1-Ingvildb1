@@ -26,6 +26,7 @@ body {
     background: #DBD2CA;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 h2 {
@@ -69,7 +70,7 @@ h2 {
     padding: 0;
     background: #ECE5E1;
     width: 200px;
-    height: 1000px;
+    height: 2000px;
     position: fixed;
     opacity: 50%;
     top: 0;
@@ -96,6 +97,75 @@ li a:hover{
 
 }
 
+/* Hamburger menu */
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    left: 0px;
+
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(130, 130, 130, 0.831);
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    width: 80%;
+    min-height: 100vh;
+    display: block;
+    z-index: 90;
+    background-color: #DBD2CA;
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active{
+    right: 0;
+}
+
+.mobile-nav a{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    text-align:center;
+    padding: 12px 16px;
+    background-color: #ECE5E1;
+    margin: 0 auto 16px;
+    text-decoration: none;
+    }
+
+.mobile-nav a:hover{
+    background-color: rgb(74, 74, 74);
+}
+
 /* Blogposts */
 
 h1 {
@@ -111,7 +181,7 @@ h1 {
 
 .posts {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 0px;
     grid-template-columns: repeat(1fr);
     padding: 10px 10px;
     justify-content: center;
@@ -128,3 +198,45 @@ img {
     
 }
 
+
+
+/* RESPONSIVE */ 
+
+
+@media (max-width: 915px) {
+    .nav {
+        top: 30%;
+    }
+
+    .nav-box {
+        width: 150px;
+    }
+
+    img {
+        width: 500px;
+        height: 400px;
+    }
+
+    .posts {
+        grid-template-columns:min-content;
+        margin: 0px 480px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .nav-box {
+        background: none;
+    }
+}

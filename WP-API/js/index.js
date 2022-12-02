@@ -1,5 +1,5 @@
 
-const baseUrl = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/";
+const baseUrl = "https://fabulous-pie-d9fbdd.netlify.app/wp-json/wp/v2/posts/";
 const postContainer = document.querySelector(".swiper-slide");
 const postSlider = document.querySelector(".post-img")
 

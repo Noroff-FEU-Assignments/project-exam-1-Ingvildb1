@@ -1,5 +1,5 @@
 
-const baseUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts/";
+const baseUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts?_embed";
 const postContainer = document.querySelector(".swiper-slide");
 const postSlider = document.querySelector(".post-img")
 
@@ -12,9 +12,10 @@ async function getPosts(url){
 
     
     posts.forEach(function(post){
+      
         postContainer.innerHTML += ` <a href="postdetails.html?id=${post.id}" class="card">
         <div class="post">
-        <img src="${post.jetpack_featured_media_url}" alt="" class="post-img">
+        <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="" class="post-img">
         <h3 class="card-text">${post.title.rendered}</h3>    
         </div> 
         </a>
@@ -23,6 +24,7 @@ async function getPosts(url){
 }
 
 getPosts(baseUrl); 
+
 
 /* SLIDER*/ 
 
@@ -52,7 +54,7 @@ getCard(cardUrl2);*/
 
 
 const postContainer1 = document.querySelector(".post-container-1");
-const baseUrl3 = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/33" ;
+const baseUrl3 = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts/33" ;
 
 async function getDetails(url){
     const response = await fetch(url);
@@ -77,7 +79,7 @@ getDetails(baseUrl3);
 /* post boxes */
 
 const postBoxes = document.querySelector(".post-boxes");
-const boxUrl = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts?per_page=6";
+const boxUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts?_embed_?per_page=6";
 
 async function getBoxes(url){
   const response = await fetch(url);
@@ -87,7 +89,7 @@ async function getBoxes(url){
   postBox.forEach(function(post){
       postBoxes.innerHTML += ` <a href="postdetails.html?id=${post.id}" class="box-card">
       <div class="box-post">
-      <img src="${post.jetpack_featured_media_url}" alt="" class="box-img">
+      <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="" class="box-img">
       <h3 class="box-text">${post.title.rendered}</h3>    
       </div> 
       </a>

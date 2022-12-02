@@ -8,7 +8,7 @@ if (!id) {
     document.location.href ="/";
 }
 
-const baseUrl = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/" + id;
+const baseUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts/" + id;
 
 async function getDetails(url){
     const response = await fetch(url);

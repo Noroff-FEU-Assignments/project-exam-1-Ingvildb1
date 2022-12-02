@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts";
+const baseUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts?_embed";
 const postContainer = document.querySelector(".posts");
 const perPage = document.querySelector('#load-more');
 
@@ -10,7 +10,7 @@ async function getPosts(url){
     posts.forEach(function(post){
         postContainer.innerHTML += ` <a href="postdetails.html?id=${post.id}" class="card">
         <div class="post">
-        <img src="${post.jetpack_featured_media_url}" alt="" class="post-img">
+        <img src="${post._embedded['wp:featuredmedia']['0'].source_url}" alt="" class="post-img">
         <h3>${post.title.rendered}</h3>     
         </div> 
         </a>
@@ -21,7 +21,7 @@ async function getPosts(url){
 getPosts(baseUrl);
 
 perPage.onclick = function(){
-    const newUrl = baseUrl + '?per_page=20';
+    const newUrl = baseUrl + '_?per_page=20';
     postContainer.innerHTML ="";
     getPosts(newUrl);
 }

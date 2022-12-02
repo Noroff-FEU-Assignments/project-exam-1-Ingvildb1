@@ -349,7 +349,8 @@ h3 {
 .post-boxes {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1/4;
     padding: 10px 10px;
     justify-content: center;
     background:rgba(231, 227, 221, 0.664);
@@ -363,6 +364,7 @@ h3 {
     display: grid;
     position: relative;
     justify-content: center;
+    
 }
 
 .post-img {

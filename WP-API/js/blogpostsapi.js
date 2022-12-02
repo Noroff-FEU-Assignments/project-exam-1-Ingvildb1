@@ -18,10 +18,14 @@ async function getPosts(url){
     })
 }
 
+
+
+const moreUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts"
+
 getPosts(baseUrl);
 
 perPage.onclick = function(){
-    const newUrl = baseUrl + '_?per_page=20';
+    const newUrl = moreUrl  +'_?per_page=20' + '_embed';
     postContainer.innerHTML ="";
     getPosts(newUrl);
 }

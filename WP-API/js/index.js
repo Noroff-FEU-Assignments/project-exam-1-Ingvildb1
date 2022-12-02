@@ -79,7 +79,7 @@ getDetails(baseUrl3);
 /* post boxes */
 
 const postBoxes = document.querySelector(".post-boxes");
-const boxUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts?_embed_?per_page=6";
+const boxUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts?_embed";
 
 async function getBoxes(url){
   const response = await fetch(url);

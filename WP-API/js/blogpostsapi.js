@@ -20,15 +20,21 @@ async function getPosts(url){
 
 
 
-const moreUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts"
-
 getPosts(baseUrl);
 
+const moreUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts?_embed"
+
 perPage.onclick = function(){
-    const newUrl = moreUrl  +'_?per_page=20' + '_embed';
+    const newUrl = moreUrl + '?per_page=20';
     postContainer.innerHTML ="";
     getPosts(newUrl);
 }
+
+
+
+
+
+
 
 
 

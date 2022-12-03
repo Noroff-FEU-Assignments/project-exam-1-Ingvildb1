@@ -1,4 +1,4 @@
-const baseUrl = "https://http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts?_embed";
+const baseUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts?_embed";
 const postContainer = document.querySelector(".posts");
 const perPage = document.querySelector('#load-more');
 

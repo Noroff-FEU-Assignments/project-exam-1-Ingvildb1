@@ -257,9 +257,9 @@ p {
         width: 150px;
     }
 
-    img {
-        width: 500px;
-        height: 400px;
+    .post-text img {
+        width: 200px;
+        height: 200px;
     }
 
     .posts {
@@ -284,6 +284,15 @@ p {
     .nav-box {
         background: none;
     }
+
+    img {
+        width: 500px;
+        height: 250px;
+    }
+
+    .back-button {
+        margin: 70px 0 0 100px;
+    }
 }
 
 
@@ -301,7 +310,7 @@ p {
         justify-content: center;
     }
 
-    img {
+    .post-text img {
         width: 300px;
         height: 200px;
     }

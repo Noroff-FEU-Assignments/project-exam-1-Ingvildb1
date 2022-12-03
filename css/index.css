@@ -500,7 +500,7 @@ h3 {
     }
 
     .header-box {
-        min-height: 60vh;
+        min-height: 80vh;
     }
 
     .header-text {
@@ -517,7 +517,7 @@ h3 {
     }
 
     .post-container-1{
-        min-height: 60vh;
+        min-height: 80vh;
     }
 
     .container-card {
@@ -560,6 +560,18 @@ h3 {
     .nav-box {
         background: none;
     }
+
+    .header-text {
+        width: 400px;
+        height: 200px;
+        top: 100px;
+    }
+
+    .container-card {
+        width: 400px;
+        height: 200px;
+        top: 100px;
+    }
 }
 
 @media (max-width: 684px) {
@@ -572,7 +584,7 @@ h3 {
     }
 
     .header-box {
-        min-height: 40vh;
+        min-height: 70vh;
     }
 
     .header-text {
@@ -590,7 +602,7 @@ h3 {
     }
 
     .post-container-1{
-        min-height: 30vh;
+        min-height: 60vh;
     }
 
     .container-card {
@@ -618,16 +630,16 @@ h3 {
 
 }
 
-@media (max-width: 412px) {
+@media (max-width: 421px) {
     .header-box {
-        min-height: 45vh;
+        min-height: 55vh;
     }
 
 
     .header-text {
-        width: 240px;
-        height: 150px;
-        top: 120px;
+        width: 250px;
+        height: 130px;
+        top: 60px;
     }
 
     h1 {
@@ -639,7 +651,7 @@ h3 {
     }
 
     .post-container-1 {
-        min-height: 30vh;
+        min-height: 50vh;
     }
 
     .container-card {

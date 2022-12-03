@@ -27,7 +27,7 @@ const moreUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2
 perPage.onclick = function(){
     const newUrl = moreUrl + '?per_page=20';
     postContainer.innerHTML ="";
-    getPosts(newUrl);
+    perPage(newUrl);
 }
 
 

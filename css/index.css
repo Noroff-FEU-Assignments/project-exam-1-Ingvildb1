@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap'); 
 
 
 /* Some variables */
@@ -18,12 +18,16 @@ a {
     color: black;
 }
 li {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
     list-style: none;
+    font-size: 1.1em;
 }
 img {
     width: 100%;
 }
 body {
+    font-family: 'Montserrat', sans-serif;
     background: #DBD2CA;
     margin: 0;
     padding: 0;
@@ -33,6 +37,8 @@ body {
 
 /* Logo */
 .logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
     font-size: 1rem;
     color:black;
     text-transform: uppercase;
@@ -59,7 +65,7 @@ body {
 
 .nav {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 18px;
 }
 
@@ -76,6 +82,12 @@ li a:hover{
     transform: scale(1.1);
 
 }
+
+li a.current{
+    color: #000000;
+    text-decoration: underline;
+ }
+
 /*  Hamburger menu */
 
 .hamburger {
@@ -170,17 +182,21 @@ li a:hover{
 }
 
 h1 {
+   font-family: 'Playfair Display', serif;
    color: #ECE5E1;
    text-transform: uppercase;
    font-size: 3em;
-   padding-top: 60px;
+   padding-top: 40px;
+   font-weight: 100;
 }
 
 h2 {
+    font-family: 'Playfair Display', serif;
     color:#ECE5E1 ;
     text-transform: uppercase;
     font-size: 1em;
     padding-bottom: 10px;
+    font-weight: 100;
 }
 
 .btn-container {
@@ -196,19 +212,20 @@ h2 {
 
 /* Latest section - Slider*/
 
-h3 {
+.slidertext {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    font-size: 1.7em;
     display: flex;
     justify-content: center;
-    margin: 100px 0 20px;
+    margin: 100px 0 20px 130px;
     color: #242424;
 }
 
 .latest-container {
-    width: 100%;
+    width: 80%;
     max-width: 900px;
-    left: 40px;
-
-
+    left: 60px;
 }
 
 .card-image {
@@ -224,14 +241,15 @@ h3 {
 }
 
 .card {
-    margin: 20px;
+    margin: 10px;
     display: flex;
     position: relative;
     flex-direction: row;
 }
 
 .post-img {
-    width: 200px;
+    width: 300px;
+    height: 250px;
 }
 
 .swiper-slide {
@@ -268,6 +286,8 @@ h3 {
 
 
 .post-container-1 h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
     color: #ffff;
     font-size: 3em;
     justify-content: center;
@@ -326,6 +346,8 @@ h3 {
 
 
 .box-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
     display: flex;
     justify-content: center;
     margin: 90px 0 0 0;
@@ -350,11 +372,10 @@ h3 {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: auto auto auto;
-    grid-template-rows: 1/4;
     padding: 10px 10px;
     justify-content: center;
     background:rgba(231, 227, 221, 0.664);
-    margin: 20px 220px;
+    margin: 20px 260px;
     justify-content: center;
     
 }
@@ -374,7 +395,7 @@ h3 {
 }
 
 .box-text {
-    font-size: 2vh;
+    font-size: 1em;
     padding: 0;
     margin: 10px 0 0 0;
     justify-content: center;
@@ -395,6 +416,15 @@ h3 {
 }
 
 
+/*  Footer */
+footer {
+    display: flex;
+    margin:150px 0px 20px 0px;
+    justify-content: center;
+    color: #585858;
+    font-size: 0.8em;
+}
+
 
 
 /*  RESPONSIVE */
@@ -409,6 +439,7 @@ h3 {
     }
     .header-text{
         width: 630px;
+        top: 50px;
     }
 
     .post-img {
@@ -441,6 +472,18 @@ h3 {
         margin-left: 38%;
         width: 120px;
     }
+
+    .latest-container {
+        width: 70%;
+        max-width: 100%;
+        left: 50px;
+    }
+
+    
+    .post-img {
+        width: 300px;
+        height: 200px;
+    }
 }
 
 
@@ -455,6 +498,7 @@ h3 {
 
     .header-text {
         width: 500px;
+        top: 80px;
     }
 
     .post-container-1{
@@ -487,6 +531,7 @@ h3 {
     .boxcard img {
         width: 100%;
     }
+    
 }
 
 /*  820px  */ 
@@ -526,7 +571,7 @@ h3 {
 
     .post-boxes {
         grid-template-columns: repeat(2, 1fr);
-        margin: 20px 160px;
+        margin: 20px 120px;
     
         }
 
@@ -542,6 +587,7 @@ h3 {
         margin-left: 33%;
         width: 120px;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -563,8 +609,8 @@ h3 {
 
     .header-text {
         width: 400px;
-        height: 200px;
-        top: 100px;
+        height: 250px;
+        top: 90px;
     }
 
     .container-card {
@@ -572,6 +618,23 @@ h3 {
         height: 200px;
         top: 100px;
     }
+
+    h1 {
+        font-size: 2.5em;
+    }
+ /* slider*/
+    .latest-container {
+        width: 80%;
+        left: 20px;
+    }
+
+    
+    .post-img {
+        width: 300px;
+        height: 200px;
+    }
+
+    
 }
 
 @media (max-width: 684px) {
@@ -591,6 +654,7 @@ h3 {
         width: 340px;
         height: 220px;
         top: 100px;
+        left: 20%;
     }
 
     h1 {
@@ -609,6 +673,7 @@ h3 {
         width: 320px;
         height: 150px;
         top: 100px;
+        left: 20%;
     }
 
     .post-container-1 h3 {
@@ -626,6 +691,13 @@ h3 {
         margin-left: 33%;
         width: 70px;
     }
+
+    .post-boxes {
+        margin: 20px 70px;
+    
+        }
+
+        
 
 
 }
@@ -673,7 +745,7 @@ h3 {
 
     .post-boxes {
         grid-template-columns: repeat(2, 1fr);
-        margin: 20px 70px;
+        margin: 20px 30px;
     
         }
 

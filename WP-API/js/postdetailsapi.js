@@ -28,10 +28,6 @@ async function getDetails(url){
 
 getDetails(baseUrl);
 
-/* new title */
-function changeTitle(title) { details.title.rendered = title; }
-
-changeTitle(title);
 
 /* pop - up  */
 const popupContainer = document.querySelector(".popup-image");

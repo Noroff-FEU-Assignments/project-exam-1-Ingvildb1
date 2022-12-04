@@ -19,23 +19,31 @@ async function getPosts(url){
 }
 
 
-
 getPosts(baseUrl);
 
-const moreUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts?_embed"
+
+
+
+/*const moreUrl = "https://gamehub-schoolproject.site/project-exam-1/wp-json/wp/v2/posts?_embed"
 
 perPage.onclick = function(){
     const newUrl = moreUrl + '?per_page=20';
     postContainer.innerHTML ="";
     getPosts(newUrl);
+}*/
+
+/* load more */
+let loadMoreBtn = document.querySelector('#load-more');
+let currentItems = 1;
+
+
+loadMoreBtn.onclick = () =>{
+    let boxes = [document.querySelectorAll('.posts .card .post')];
+    for (var i = currentItems; i < currentItems + 2; i++){
+        boxes[i].style.display = 'grid';
+    }
+    currentItems += 3;
 }
-
-
-
-
-
-
-
 
 
 
@@ -54,6 +62,10 @@ menu_btn.addEventListener('click', function() {
 );
 
 
+
+
+
+
 /* Back button */
 
 function backButton(){
@@ -62,3 +74,10 @@ function backButton(){
 }
 
 backButton(back);
+
+
+
+
+
+
+

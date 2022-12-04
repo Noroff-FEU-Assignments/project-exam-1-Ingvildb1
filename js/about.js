@@ -1,5 +1,7 @@
 
 
+
+
 /* hamburger menu */
 
 const menu_btn = document.querySelector('.hamburger');
@@ -11,3 +13,12 @@ menu_btn.addEventListener('click', function() {
 }
 
 );
+
+/* Back button */
+
+function backButton(){
+  onclick
+  window.history.back()
+}
+
+backButton(back);

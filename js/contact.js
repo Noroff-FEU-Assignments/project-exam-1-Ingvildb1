@@ -94,3 +94,13 @@ menu_btn.addEventListener('click', function() {
 );
 
 
+/* Back button */
+
+function backButton(){
+    onclick
+    window.history.back()
+}
+
+backButton(back);
+
+

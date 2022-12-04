@@ -26,31 +26,8 @@ async function getPosts(url){
 getPosts(baseUrl); 
 
 
-/* SLIDER*/ 
 
 
-/* 2 */
-
-/*const card2 = document.querySelector(".card");
-const cardUrl2 = "http://localhost/project-exam-1-Ingvildb1/wp-json/wp/v2/posts/43" ;
-
-async function getCard(url){
-    const response = await fetch(url);
-    const details = await response.json();
-
-
-    card1.innerHTML = ` <a href="postdetails.html?id=${details.id}" class="card-2">
-    <div class="post-2">
-    <img src="${details.jetpack_featured_media_url}" alt="" class="post-img">
-    <h3 class=">${details.title.rendered}</h3>     
-    </div> 
-    </a>
-    `;
-
-
-}
-
-getCard(cardUrl2);*/
 
 
 const postContainer1 = document.querySelector(".post-container-1");

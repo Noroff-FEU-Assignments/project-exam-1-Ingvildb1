@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+
 /* Some variables */
 :root {
     --main-color:
@@ -15,12 +17,16 @@ a {
     color: black;
 }
 li {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
     list-style: none;
+    font-size: 1.1em;
 }
 img {
     width: 100%;
 }
 body {
+    font-family: 'Montserrat', sans-serif;
     background: #DBD2CA;
     margin: 0;
     padding: 0;
@@ -30,6 +36,8 @@ body {
 
 /* Logo */
 .logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
     font-size: 1rem;
     color:black;
     text-transform: uppercase;
@@ -72,6 +80,23 @@ li a:hover{
     transition: 0.3s all linear;
     transform: scale(1.1);
 
+}
+
+li a.current{
+    color: #000000;
+    text-decoration: underline;
+ }
+
+ .back-button {
+    display: flex;
+    margin: 40px 0 0 200px;
+    background: none;
+    padding: 10px 30px;
+    border: none;
+}
+
+.back-button:hover{
+    color: #7E7B7A;
 }
 
 /* Hamburger menu */
@@ -158,7 +183,7 @@ li a:hover{
 
 .header-text {
     position: relative;
-    top: 220px;
+    top: 140px;
     text-align: center;
     background:rgba(130, 130, 130, 0.459);
     justify-content: center;
@@ -168,6 +193,8 @@ li a:hover{
 }
 
 h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
    color: #ECE5E1;
    text-transform: uppercase;
    font-size: 3em;
@@ -175,6 +202,8 @@ h1 {
 }
 
 h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
     color:#ECE5E1 ;
     text-transform: uppercase;
     font-size: 1em;
@@ -186,7 +215,7 @@ h2 {
 
 .text-container {
     position: relative;
-    top: 120px;
+    top: 0px;
     text-align: left;
     justify-content: center;
     width: 800px;
@@ -203,7 +232,7 @@ h2 {
 .text-container-2 {
     background:rgba(255, 255, 255, 0.459);
     position: relative;
-    top: 190px;
+    top: 160px;
     text-align: left;
     justify-content: center;
     width: 940px;
@@ -213,6 +242,14 @@ h2 {
     margin-top: 90px;
 }
 
+/*  Footer */
+footer {
+    display: flex;
+    margin:200px 0px 20px 0px;
+    justify-content: center;
+    color: #585858;
+    font-size: 0.8em;
+}
 
 
 
@@ -287,22 +324,22 @@ h2 {
 
     .header-text {
         width: 300px;
-        height: 150px;
-        top: 120px;
+        height: 170px;
+        top: 110px;
     }
 
     h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     h2 {
-        font-size: 0.7em;
+        font-size: 1.2em;
     }
 
     .text-container p {
-        font-size: 0.9em;
-        width: 500px;
-        line-height: 19px;
+        font-size: 1em;
+        width: 600px;
+        line-height: 25px;
     }
 
     .text-container {
@@ -318,8 +355,32 @@ h2 {
     }
 
     .text-container-2 p {
-        font-size: 0.7em;
+        font-size: 1em;
       
+    }
+
+    .back-button {
+        margin: 40px 0 0 90px;
+    }
+}
+
+@media (max-width: 668px) {
+    .text-container p {
+        font-size: 1em;
+        width: 500px;
+        line-height: 25px;
+    }
+
+    .text-container-2 {
+        margin-top: 280px;
+    }
+}
+
+@media (max-width: 568px) {
+    .text-container p {
+        font-size: 1em;
+        width: 400px;
+        line-height: 25px;
     }
 }
 

@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Pure Interior for more information or for any questions" />
     <title>Pure Interior | Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/contact.css">
+    <script src="https://kit.fontawesome.com/a85b957c13.js" crossorigin="anonymous"></script>
 
     <!-- Hotjar Tracking Code for Project-exam-1 -->
 <script>
@@ -35,7 +37,7 @@
                     <li> <a href="index.html">Home</a></li>
                     <li> <a href="blogposts.html">Posts</a></li>
                     <li> <a href="about.html">About</a></li>
-                    <li> <a href="contact.html">Contact</a></li>
+                    <li> <a href="contact.html" class="current">Contact</a></li>
                 </ul>
         </div>
         <button class="hamburger ">
@@ -55,10 +57,11 @@
     </header>
 
     <main>
+        <button class="back-button"  onclick="backButton()"><i class="fa-regular fa-angle-left"></i></button>
 
     <div class="contact">
         <div>
-            <h2>Contact us</h2>
+            <h1>Contact us</h1>
         </div>
      <div class="container-contact">
         
@@ -95,6 +98,11 @@
         </div>
 
     </main>
+
+    <footer>
+        Copyright 2022&copy;
+    </footer>
+
     <script src="/js/contact.js"></script>
 </body>
 </html>

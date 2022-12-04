@@ -107,6 +107,7 @@ li a.current{
     content:'';
     display: block;
     width: 100%;
+    width: 30px;
     height: 5px;
     background-color: rgba(130, 130, 130, 0.831);
     margin: 6px 0px;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap'); 
 
 
 /* Some variables */
@@ -129,6 +130,7 @@ li a.current{
     content:'';
     display: block;
     width: 100%;
+    width: 30px;
     height: 5px;
     background-color: rgba(130, 130, 130, 0.831);
     margin: 6px 0px;

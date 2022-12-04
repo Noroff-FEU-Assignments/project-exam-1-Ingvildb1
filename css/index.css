@@ -699,8 +699,6 @@ footer {
         }
 
         
-
-
 }
 
 @media (max-width: 421px) {
@@ -725,6 +723,7 @@ footer {
 
     .slidertext {
         margin: 100px 0 20px 40px;
+    }
 
     .post-container-1 {
         min-height: 50vh;
@@ -749,9 +748,13 @@ footer {
 
     .post-boxes {
         grid-template-columns: repeat(2, 1fr);
-        margin: 20px 30px;
+        margin: 20px 4px;
     
         }
+
+        .post-boxes img {
+            width: 110%;;
+        } 
 
     .box-text {
         font-size: 0.7em;
@@ -759,7 +762,7 @@ footer {
 
     .btn-boxes {
         margin-left: 25%;
-        width: 60px;
+        width: 70px;
         font-size: 0.7em;
     }
 
@@ -772,4 +775,9 @@ footer {
     .logo {
         font-size: 0.7em;
     }
-}
+
+    .latest-container {
+        width: 80%;
+        left: 5px;
+    }
+    }

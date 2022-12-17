@@ -1,67 +1,53 @@
 ## Project Exam 1
 
-## Goal
+![image](images/header2.png)
 
-To put into practice the skills learned over your first year of studies.
+## Description
 
-## Brief
-You have been tasked with creating a blog site. You can choose the design and topics covered on the blog, but it should have at least the following pages:
--	Home page
--	About page
--	List of blog posts
--	Blog post specific pages
--	Contact page.
+The brief in this project exam was to create a personal blog, with a theme of our own choice. I chose to make a blog about interior, and called this "Pure Interior". The blog is an inspiring site where people can easy find inspiration and read about the trends in the interior world. The blog is clean, easy and modern in the design to make the user get a relaxed feeling. 
 
-### Home Page
-The home page should have a ‘Latest Posts’ section which uses a carousel (slider) for users to click to view more posts. For example, by default the user can see four posts, then they can click an arrow on the right to view the next four posts, and click it again to view the next four posts. The user can also click back to view results they had previously seen. This must be implemented for desktop at least, but if you want a simpler layout for mobile, you can change it from being in a carousel.
+The target group for this site is women 40+ in a busy everyday lifestyle and has a hobby or interest for interior. 
 
-### Blog Page
+The website consists of 5 pages:
 
-The blog posts page should show the first 10 blogs, and the user should click to view more results which then show underneath the first 10 blogs.
+- A home page with a carousel showing the latest posts uploaded to the blog.
+- A list of all posts page
+- A post specific page which is dynamically built based on which post the user selected. The content of the blog specific page is dynamically built using a query     string parameter based on whatever link the user clicked. If images on the blog post page are clicked, a modal appears giving the user a bigger view of that         image.
+- an Exhibition site - where the user can explore all of our exhibition spaces and all the things you can do at our museum
+- Checkout success
+- About
+- Contact (JavaScript are used for validation, shows error messages if the values in the textboxes do not meet the requirements.)
 
-### Blog Specific Page
+## WordPress
 
-The content of the blog specific page should be dynamically built using a query string parameter based on whatever link the user clicked. The title of the blog specific page should change based on the blog that has been clicked on e.g. “My Blog | An Article I Wrote”.
+The content for this website are stored on a WordPress installation used as a Headless CMS. This site only using WordPress to provide an API and add content for the blog.
 
-If images on the blog post page are clicked, a modal should appear giving the user a bigger view of that image. Clicking outside the image should hide the modal.
+## Built With
 
-### Contact page
+This site was built with
 
-Create a contact us page, there should be 4 textboxes on this page.
--	Name (Should be more than 5 characters long)
--	Email address (Must be a valid email address)
--	Subject (Should be more than 15 characters long)
--	Message content (Should be more than 25 characters long)
+- HTML
+- CSS
+- JavaScript
+- A headless WordPress API used for storing blog posts.
 
-Please use JavaScript for validation, show error messages if the values in the textboxes do not meet the requirements.
+## Getting Started
 
-### WordPress
+The project does not contain any dependencies, and can easily be installed/run by cloning the GitHub repo.
 
-The content for your website will be stored on a WordPress installation used as a Headless CMS. It’s important to note that we are only using WordPress to provide an API and add content for the blog. You should not submit a link to a WordPress site, but build your website using HTML, CSS and JavaScript and making a call to the WordPress REST API to fetch the data. 
 
-The project has two aspects:
--	API from your WordPress installation
--	Your website built with HTML, CSS and JavaScript
+```bash
+git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-Ingvildb1.git
+```
 
-You will need to add at least 12 blogs for your website. You can use lorem ipsum for paragraphs if you need, but headings, images etc. should all make sense.
 
-Note that this is an exam, and therefore tutor support will be limited as per the study plan.
+## Contributing
 
-## Level 1 Process
+I am a newbie to front-end development, and I am very sure there are many improvements to be made. If you wish to contribute by sending in feedback, you are welcome to do so.
 
-1.	Decide on the theme for the blog you’re going to make
-2.	Create a prototype of the website
-3.	Install WordPress on your web host and add the blogs on the admin panel. 
-4.	Use the GitHub repo created by GitHub Classroom for your files and deploy to Netlify
-5.	Build your website using HTML, CSS and JavaScript making a call to the WordPress REST API to fetch your data.
-6.	Install Hotjar on your website.
-7.	Ask users to test your website, and adjust based on their feedback and any insights from Hotjar.
-8.	Write a report documenting your project (template provided in this repository).
-9.	Submit your report as a PDF and a link to both your Netlify deployment and your GitHub repo.
- 
-## Level 2 Process (optional)
+## Contact
 
-1.	You can try adding a sort, filter, or search to the blog posts page allowing users to find the blog post more easily that they’re looking for. 
-2.	Post the data from the contact form to WordPress so you have the details saved.
-3.	Allow users to submit comments on a blog post, and post this data to WordPress
+
+[My LinkedIn page](www.linkedin.com/in/ingvild-berger-7268771b3)
+
 
